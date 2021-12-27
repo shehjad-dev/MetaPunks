@@ -1,0 +1,134 @@
+.header {
+  /* background-color: lightslategray; */
+  color: white;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.header > div {
+  margin: 10px;
+}
+
+.punkLogo {
+  width: 200px;
+}
+
+.searchBar {
+  background-color: #241436;
+  display: flex;
+  align-items: center;
+  flex: start;
+  flex: 1;
+  padding: 0 10px 0 10px;
+  border-radius: 50px;
+  height: 50px;
+}
+
+.searchIconContainer {
+  padding: 8px;
+}
+
+.sarchInput {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #eee;
+  font-size: 16px;
+}
+
+.headerMenus {
+  display: flex;
+}
+
+.headerMenus > p {
+  margin: 10px;
+  cursor: pointer;
+  color: lightgray;
+}
+
+.headerMenus > p:hover {
+  color: #eee;
+  transition: all 0.2s ease-in;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+}
+
+.headerActions > div {
+  margin: 10px;
+}
+
+.themeSwitchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color: #241436;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.themeSwitchContainer:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in;
+}
+
+.themeSwitchIcon {
+  height: 25px;
+}
+
+.loginBtn {
+  background: linear-gradient(to right, #b97dfa, #8113f6);
+  padding: 15px 40px;
+  border-radius: 40px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0px 0px 57px 3px rgba(185, 125, 250, 0.36);
+  -webkit-box-shadow: 0px 0px 57px 3px rgba(185, 125, 250, 0.36);
+  -moz-box-shadow: 0px 0px 57px 3px rgba(185, 125, 250, 0.36);
+}
+.loginBtn:hover {
+  background: linear-gradient(to right, #b97dfa, #8113f6);
+  transition: all 0.8s;
+  box-shadow: 0px 0px 57px 13px rgba(185, 125, 250, 0.36);
+  -webkit-box-shadow: 0px 0px 57px 13px rgba(185, 125, 250, 0.36);
+  -moz-box-shadow: 0px 0px 57px 13px rgba(185, 125, 250, 0.36);
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    overflow: hidden;
+    background-color: transparent;
+  }
+
+  .searchBar,
+  .headerMenus,
+  .headerActions,
+  .themeSwitchContainer {
+    display: none;
+  }
+
+  .punkLogo {
+    width: 90px;
+  }
+
+  .loginBtn {
+    background: linear-gradient(to right, #b97dfa, #8113f6);
+    padding: 10px 26px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: none;
+  }
+  .loginBtn:hover {
+    box-shadow: none;
+  }
+}

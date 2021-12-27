@@ -1,0 +1,160 @@
+.main {
+  color: white;
+  padding: 30px 0;
+  /* background-color: rgb(61, 49, 35); */
+  display: flex;
+  /* margin-left: 20px;
+  margin-right: 20px; */
+}
+
+.punkImageContainer {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.punkImage {
+  width: 100%;
+}
+
+.punkInfoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 60px;
+  /* padding-right: 30px; */
+  /* background-color: red; */
+  /* width: 100%; */
+  flex: 1;
+  padding-top: 0px;
+}
+
+.punkName {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  letter-spacing: 1.8px;
+}
+
+.punkId {
+  font-size: 20px;
+  color: lightgrey;
+  font-weight: 700;
+}
+
+.punkPriceContainer {
+  display: flex;
+  align-items: center;
+  /* background-color: blueviolet; */
+}
+
+.wethImg {
+  width: 18px;
+  height: 32px;
+}
+.punkPrice {
+  /* margin-left: 10px; */
+  padding-left: 6px;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.ownerAvatarContainer {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+  outline: 3px solid #eee1fab7;
+  margin-right: 25px;
+}
+
+.ownerAvatar {
+  width: 100%;
+}
+
+.ownerDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ownerMust {
+  display: flex;
+  align-items: center;
+}
+
+.ownerName {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.ownerLinks {
+  display: flex;
+}
+
+.websiteIconContainer,
+.instaIconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 17px;
+  background-color: #241436;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+}
+
+.websiteIconContainer img,
+.instaIconContainer img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .punkImageContainer {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .punkImage {
+    width: 200px;
+    height: 100%;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .punkInfoContainer {
+    padding-left: 0;
+  }
+
+  .ownerDetails {
+    margin: 30px 0 10px 0;
+  }
+
+  .ownerAvatarContainer {
+    width: 40px;
+    height: 40px;
+    outline: 2px solid #eee1fab7;
+    margin-right: 10px;
+  }
+
+  .websiteIconContainer,
+  .instaIconContainer {
+    padding: 12px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .punkImageContainer {
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,19 @@
+.punkList {
+  /* background-color: aqua; */
+  display: flex;
+  overflow: scroll;
+  /* cursor: pointer; */
+  border-top: 2px solid #eee1fab7;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  /* margin-left: 15px;
+  margin-right: 15px; */
+}
+
+.punkList::-webkit-scrollbar {
+  display: none;
+}
+
+.swipeButtonContainer {
+  color: white;
+}
